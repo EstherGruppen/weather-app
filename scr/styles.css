@@ -1,3 +1,5 @@
+/* //https://www.color-hex.com/color-palette/102255*/
+
 body {
     font-family: arial, sans-serif;
 }
@@ -34,16 +36,18 @@ li {
 }
 
 #search-button {
-    background-color: #4ccaec;
-    border-color:#4cc9ec5b;
+    background-color:#4b8378;
+    border-color:#0a4158;
 }
- #current-city-button{
-    background-color: #4ccaec;
-    border-color:#4cc9ec5b; 
+#current-city-button{
+    background-color:#4b8378;
+    border-color: #0a4158;
 } 
 
 #icon{
     margin-top: 10px;
+    position: relative;
+    top: -25px;
 }
 
 .weather-app-wrapper {
@@ -52,18 +56,23 @@ li {
     }
 
 .weather-app {
-    border: 2px solid #dadde1;
+    border: 2px solid #0a4158;
     border-radius: 10px;
     padding: 15px;
     margin-top: 30px;
-}
+    background-color: #CDDCDC;
+    background-image: radial-gradient(at 50% 100%, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
+    background-blend-mode: screen,
+    overlay;
+} 
 
 .coded-by {
     font-size: small;
  }
 
-.temperature {
-    color: rgb(33, 33, 33);
+.temp {
+    color: #636262;
     font-size: 64px;
     font-weight: 400;
     line-height: 1;
@@ -71,7 +80,9 @@ li {
 
 .units {
     position: relative;
-    top: -34px;
+    top: -33px;
+    left: 0px;
+    }
 }
 
 .search-form {

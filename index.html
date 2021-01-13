@@ -31,7 +31,7 @@
           <div class="col-6">
             <input
               type="search"
-              placeholder="Find your city"
+              placeholder="Find your city..."
               class="form-control shadow-sm"
               autofocus="on"
               id="city-input"
@@ -66,23 +66,19 @@
             src="http://openweathermap.org/img/wn/10d@2x.png"
             alt="weather icon"
             id="icon"
-            class="float-left"
           />
-          <div class= "float-left">
-          <span class="temp" id="temp"> 19</span>
-          <span class="degreesfahrenheit-icon">
+          <span class="temp" id="temp"></span>
+          <span class="units">
             <a href="##" id="celsiusLink">&deg C</a> |
             <a href="#" id="fahrenheitLink">&deg;F</a>
           </span>
           </div>
-          </div>
         </div>
         <div class="col-6">
           <ul>
+            <li> Feels like: <span id="feelslike"></span>&degC </li>
             <li> Humidity test: <span id="humidity"></span> %</li>
-            <li> Wind: <span id="wind"></span> p/uur </li>
-            <li> Sunrise: <span id="sunrise"> 3 </span>
-            <li> Sunset: <span id="sunset"> 4 </span></li>
+            <li> Wind: <span id="wind"></span> p/hour </li>   
           </ul>
         </div>
       </div>
