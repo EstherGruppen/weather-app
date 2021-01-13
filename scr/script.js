@@ -7,7 +7,7 @@ function formatDate(date){
     }
     let minutes = date.getMinutes();
     if (minutes < 10) {
-    minutes = `0${minutes}`;
+        minutes = `0${minutes}`;
     }
     let dayIndex = date.getDay();
     let days = [
@@ -18,23 +18,23 @@ function formatDate(date){
         "Thursday",
         "Friday",
         "Saturday"
-    ];
+      ];
   let day = days[dayIndex];
   return `${day} ${hours}:${minutes}`;
 } 
 
 function showTemp(response) {
-    document.querySelector("#city").innerHTML = response.data.name;
-    document.querySelector("#temp-description").innerHTML = response.data.weather[0].main;
-    document.querySelector("#temp").innerHTML = Math.round(response.data.main.temp);
-    document.querySelector("#humidity").innerHTML = response.data.main.humidity;
-    document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
-}
-
+  document.querySelector("#city").innerHTML = response.data.name;
+  document.querySelector("#temp-description").innerHTML = response.data.weather[0].main;
+  document.querySelector("#temp").innerHTML = Math.round(response.data.main.temp);
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
+  document.querySelector("#icon").setAttribute(
+  "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+} 
 function search(city) {
-  //let cityElement = document.querySelector("#city");
-  //let cityName = document.querySelector("#cityName");
-  //cityElement.innerHTML = cityName.value;
     let apiKey = "c813098e209e0e99c21768a60931c14c";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=c813098e209e0e99c21768a60931c14c&units=metric`;
     axios.get(apiUrl).then(showTemp);

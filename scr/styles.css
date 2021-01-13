@@ -33,27 +33,34 @@ li {
     list-style: none;
 }
 
-.weather-app {
-    border: 1px solid #dadde1;
-    padding: 15px;
-    margin: 20px auto;
-    border-radius: 10px;
+#search-button {
+    background-color: #4ccaec;
+    border-color:#4cc9ec5b;
+}
+ #current-city-button{
+    background-color: #4ccaec;
+    border-color:#4cc9ec5b; 
+} 
+
+#icon{
+    margin-top: 10px;
+}
+
+.weather-app-wrapper {
     max-width: 600px;
+    margin: 0px auto;
+    }
+
+.weather-app {
+    border: 2px solid #dadde1;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 30px;
 }
 
 .coded-by {
-    padding: 15px;
-    margin: 20px auto;
-    text-align: left;
     font-size: small;
-    max-width: 600px;
-}
-
-.weather-icon {
-    height: 64px;
-    width: 64px;
-    margin-right: 10px;
-}
+ }
 
 .temperature {
     color: rgb(33, 33, 33);
