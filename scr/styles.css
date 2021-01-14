@@ -5,8 +5,8 @@ body {
 }
 
 h1 {
-    color: #7c7c7c;
-    font-size: 24px;
+    color:#0a4158;
+    font-size: 36px;
     font-weight: 100;
     line-height: 28px;
     margin-top: 25px;
@@ -33,6 +33,11 @@ li {
     line-height: 1;
     list-style: none;
 }
+
+img {
+    max-width: 30%;
+}
+
 #city-input {
     border-color:#0a4158;
 }
@@ -55,7 +60,7 @@ li {
 .weather-app-wrapper {
     max-width: 600px;
     margin: 0px auto;
-    }
+}
 
 .weather-app {
     border: 2px solid #0a4158;
@@ -71,7 +76,7 @@ li {
 
 .coded-by {
     font-size: small;
- }
+}
 
 .temp {
     color: #636262;
@@ -89,8 +94,4 @@ li {
 
 .search-form {
     margin-bottom: 20px;
-}
-
-img {
-    max-width: 30%;
 }
